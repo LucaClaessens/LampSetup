@@ -1,0 +1,10 @@
+{
+    "name": "LampSetup",
+    "version": "1.0.0",
+    "description": "Arduino library for Bouke Bruins",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/LucaClaessens/LampSetup.git"
+    },
+    "frameworks": "arduino"
+}
