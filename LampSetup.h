@@ -10,7 +10,12 @@
 
 class LampSetup {
 public:
-    LampSetup(uint8_t relayPin, uint8_t buttonPin, uint8_t CLK, uint8_t DIO);
+    LampSetup(uint8_t relayPin, uint8_t buttonPin, uint8_t CLK, uint8_t DIO) :
+     ledDisplay(TM1637Display(CLK, DIO)),
+     relayPin(relayPin),
+     buttonPin(buttonPin)
+     {}  
+    ;
     void setup();
     void update();
 private:
